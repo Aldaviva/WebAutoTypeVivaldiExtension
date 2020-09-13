@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "WebAutoType",
+	"version": "0.0.0",
+	"author": "Ben Hutchison",
+	"description": "Send the active URL from Vivaldi to the KeePass WebAutoType plugin so it can autotype the correct password.",
+	"icons": {
+		"16": "icons/KeePass_Round_16.png",
+		"32": "icons/KeePass_Round_32.png",
+		"48": "icons/KeePass_Round_48.png",
+		"128": "icons/KeePass_Round_128.png"
+	},
+	"background": {
+		"page": "background.html",
+		"persistent": false
+	},
+	"permissions": [
+		"tabs",
+		"storage",
+		"http://127.0.0.1:53372/webautotype/activeurl/vivaldi"
+	],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"externally_connectable": {
+		"ids": [ "mpognobbkildjkofajifpdfhcoklimli" ]
+	},
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuBUwWni+QZkkw+H2ZFMWG9npMDY7UpSWK7yIz8hpy64KiufpwwnD4C1Z44u6LuxvxOa6rQLWDeSAgivlTRTskeTiStu0ViRowcR5MqS/JYpNZluKRjlwJGvEb8zcJgJoEtSZZN48NRWxc73eU9vkVHefsMszvLgZPrjKhZir/INVhHU3yKNC96FIFIDewvzSjq03emYvmOoqhq8U7tCLvaTh8FrfN1yQtJDT38ruumNtCPyxBWdu0lgr8IrxcHXJLIj1UlhDUMf3PtnC/eTOxThUGRNskMuU//Eh055LtZldw5KK2PTA/x38P3Dq/P5KTR2cDGU2RcyfzBDpaUXOKwIDAQAB"
+}
